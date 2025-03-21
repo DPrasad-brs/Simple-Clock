@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    text-align: center;
+    background-color: blue;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+#analog-clock {
+    height: 30vw;
+    width: 30vw;
+    margin: auto;
+    background-image: url("../images/clock.png");
+    background-size: contain;
+    position: relative;
+}
+
+#hour {
+    width: 3%;
+    height: 20%;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    left: 48.3%;
+    transform-origin: bottom;
+}
+
+#minute {
+    width: 2%;
+    height: 30%;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 48.8%;
+    transform-origin: bottom;
+}
+
+#second {
+    width: 1%;
+    height: 35%;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 49.3%;
+    transform-origin: bottom;
+}

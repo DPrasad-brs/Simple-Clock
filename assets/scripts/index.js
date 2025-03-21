@@ -1,0 +1,21 @@
+const hourHand = document.getElementById("hour");
+const minuteHand = document.getElementById("minute");
+const secondHand = document.getElementById("second");
+
+rotateClockHands = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();    
+
+    // Calculating degrees of rotation for clock hands
+    hrotation = (30 * hours) + (minutes / 2) + (seconds / 120);
+    mrotation = (6 * minutes) + (seconds / 10);
+    srotation = (6 * seconds);
+
+    hourHand.style.transform = `rotate(${hrotation}deg)`;
+    minuteHand.style.transform = `rotate(${mrotation}deg)`;
+    secondHand.style.transform = `rotate(${srotation}deg)`;
+}
+
+setInterval(rotateClockHands, 1000);
