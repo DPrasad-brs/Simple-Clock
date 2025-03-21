@@ -16,10 +16,7 @@ const rotateClockHands = () => {
 
     hourHand.style.transform = `rotate(${hrotation}deg)`;
     minuteHand.style.transform = `rotate(${mrotation}deg)`;
-    secondHand.style.transform = `rotate(${srotation}deg)`;
-
-    console.log(milliSeconds);
-    
+    secondHand.style.transform = `rotate(${srotation}deg)`;    
 }
 
 setInterval(rotateClockHands, 1);
