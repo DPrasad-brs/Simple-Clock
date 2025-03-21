@@ -2,7 +2,7 @@ const hourHand = document.getElementById("hour");
 const minuteHand = document.getElementById("minute");
 const secondHand = document.getElementById("second");
 
-rotateClockHands = () => {
+const rotateClockHands = () => {
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
